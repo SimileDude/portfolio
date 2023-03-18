@@ -1,0 +1,8 @@
+@import '../global-styles.scss';
+
+.left-panel {
+  @include page-layout();
+  width: 200px;
+  //   z-index: 20;
+}
+
