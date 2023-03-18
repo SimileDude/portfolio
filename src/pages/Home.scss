@@ -1,40 +1,41 @@
 // @use '../_global-styles.scss';
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import '../global-styles.scss';
-$railway-dots: 'Abril Fatface', cursive, 'Raleway Dots';
+// $railway-dots: 'Abril Fatface', cursive, 'Raleway Dots';
 
-$test-border-1: #978 1px solid;
-$test-border-2: #666 1px solid;
-$test-border-3: #ddd 2px solid;
+// $test-border-1: #978 1px solid;
+// $test-border-2: #666 1px solid;
+// $test-border-3: #ddd 2px solid;
 
-// $main-background: #4761a5;
-$main-background: #0c4c9a;
-$primary-text: #fff;
-$secondary-text: #ea9010;
-$dark-brown: #37371f;
-$pistachio: #90be6d;
+// // $main-background: #4761a5;
+// $main-background: #0c4c9a;
+// $primary-text: #fff;
+// $secondary-text: #ea9010;
+// $dark-brown: #37371f;
+// $pistachio: #90be6d;
 
-@mixin flexbox($justify: flex-start, $align: stretch, $direction: row) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $justify;
-  align-items: $align;
-}
+// @mixin flexbox($justify: flex-start, $align: stretch, $direction: row) {
+//   display: flex;
+//   flex-direction: $direction;
+//   justify-content: $justify;
+//   align-items: $align;
+// }
 
 @mixin border($color: gray, $width: 1px, $style: solid) {
   border: $color $width $style;
 }
-@mixin page-layout() {
-  min-height: 100%;
-  min-width: 865px;
-  width: 100%;
-  // border: $test-border-1;
-  background-color: $main-background;
-}
+// @mixin page-layout() {
+//   min-height: 100%;
+//   min-width: 865px;
+//   width: 100%;
+//   // border: $test-border-1;
+//   background-color: $main-background;
+// }
 
 .home {
   @include flexbox();
   @include page-layout();
+  width: 100vw;
   .left-edge {
     min-width: 35%;
     position: relative;
@@ -84,7 +85,7 @@ $pistachio: #90be6d;
     //   z-index: 9;
     // }
     .portrait {
-      z-index: 4;
+      z-index: 20;
       // display: none;
     }
     // .diamond-gradient {
