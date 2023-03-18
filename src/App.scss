@@ -1,0 +1,11 @@
+@mixin flexbox($justify: flex-start, $align: stretch, $direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+.app {
+  @include flexbox();
+}
+
