@@ -1,14 +1,9 @@
-import Home from '../pages/Home';
-import About from '../pages/About';
-import Work from '../pages/Work';
+import About from '../pages/About/About';
+import Work from '../pages/Work/Work';
 import Skills from '../pages/Skills';
-import Contact from '../pages/Contact';
+import Contact from '../pages/Contact/Contact';
 
 const routes = [
-  {
-    path: '/',
-    component: Home,
-  },
   {
     path: '/about',
     component: About,

@@ -1,0 +1,15 @@
+@import '../styles/global-styles.scss';
+
+.layout {
+  @include setPage;
+  .main {
+    @include flexbox($direction: column);
+    margin-top: 120px;
+    width: 100%;
+    p {
+      @include main-text;
+      margin-right: 5%;
+    }
+  }
+}
+
