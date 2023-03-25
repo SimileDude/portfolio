@@ -1,0 +1,15 @@
+.rain-container span {
+  color: white;
+  position: absolute;
+  animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+  from {
+    top: -10%;
+  }
+  to {
+    top: 110%;
+  }
+}
+

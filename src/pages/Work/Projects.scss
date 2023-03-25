@@ -1,0 +1,70 @@
+@import '../../styles/global-styles.scss';
+
+.project-item {
+  @include flexbox($align: center);
+
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: -165px;
+  background-color: $main-background;
+  // border: 1px solid $secondary-text;
+  border-left: $secondary-text 4px solid;
+  border-right: $secondary-text 1px solid;
+  padding: 10px;
+  border-radius: 5px;
+
+  .logo-container {
+    @include flexbox($align: center, $justify: center);
+    flex: 0 0 200px;
+    height: 200px;
+    // background-image: url(https://picsum.photos/200/300);
+    background-color: $secondary-background-opaque;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    margin-right: 20px;
+
+    .project-logo {
+      height: 70px;
+      background-position: center;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+
+  .project-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // min-height: 200px;
+
+    .description-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      // justify-content: center;
+      flex: 2;
+
+      .description {
+        margin: 0;
+        margin-left: 1.2em;
+        font-size: 1rem;
+      }
+    }
+    h2 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    button {
+      width: inherit;
+      font-size: 1.8rem;
+    }
+
+    .ext-link {
+      text-decoration: none;
+      font-size: 1rem;
+    }
+  }
+}
+

@@ -1,0 +1,40 @@
+import React from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
+import './MainNav.scss';
+
+const PAGE_LINKS = ['About', 'Work', 'Skills', 'Contact'];
+
+const MainNav = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
+  const navClass = isHomePage ? 'home-nav' : 'nav';
+  const navListClass = isHomePage ? 'home-nav-list' : 'nav-list';
+  const navItemClass = isHomePage ? 'home-nav-item' : 'nav-item';
+
+  return (
+    <>
+      <nav className={navClass}>
+        <ul className={navListClass}>
+          {PAGE_LINKS.map((link, index) => {
+            return (
+              <li key={index} className={navItemClass}>
+                <NavLink
+                  to={`/${link}`}
+                  className={({ isActive, isPending }) =>
+                    isPending ? 'pending' : isActive ? 'active' : ''
+                  }
+                >
+                  {link}
+                </NavLink>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+    </>
+  );
+};
+
+export default MainNav;
+

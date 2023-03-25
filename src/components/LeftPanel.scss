@@ -1,8 +1,30 @@
-@import '../global-styles.scss';
+@import '../styles/global-styles.scss';
 
 .left-panel {
-  @include page-layout();
+  @include primary-bkgd();
+  @include flexbox($direction: column, $justify: space-between);
+  // flex-grow: 1;
+  // position: relative;
   width: 200px;
-  //   z-index: 20;
+  height: 100vh;
+  margin-right: 120px;
+  .circle {
+    @include circle();
+    margin-left: 160px;
+  }
+  .logo-section {
+    flex-grow: 2;
+    .logo > a {
+      @include logo();
+      top: 0%;
+      padding-left: 5%;
+      font-size: 7rem;
+    }
+  }
+  .nav-section {
+    // width: 100%;
+    flex-grow: 1;
+    margin-right: 10%;
+  }
 }
 
