@@ -1,6 +1,6 @@
 import About from '../pages/About/About';
 import Work from '../pages/Work/Work';
-import Skills from '../pages/Skills';
+import Skills from '../pages/Skills/Skills';
 import Contact from '../pages/Contact/Contact';
 
 const routes = [

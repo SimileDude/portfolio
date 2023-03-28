@@ -1,30 +1,73 @@
+@use '../styles/media';
 @import '../styles/global-styles.scss';
 
 .left-panel {
   @include primary-bkgd();
-  @include flexbox($direction: column, $justify: space-between);
-  // flex-grow: 1;
-  // position: relative;
+  @include box-shadow;
+  flex: 0 0 200px;
   width: 200px;
-  height: 100vh;
-  margin-right: 120px;
-  .circle {
-    @include circle();
-    margin-left: 160px;
-  }
-  .logo-section {
-    flex-grow: 2;
-    .logo > a {
-      @include logo();
-      top: 0%;
-      padding-left: 5%;
-      font-size: 7rem;
+  min-height: 100%;
+
+  .main-content {
+    @include flexbox($direction: column, $justify: space-between);
+    height: 100vh;
+    margin-right: 10%;
+
+    .home-section {
+      text-align: right;
+      flex: 1 1 200px;
+      margin-top: 80px;
+      .home-link {
+        font-size: 1.8rem;
+        color: white;
+        &:hover {
+          color: $light-blue;
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .nav-section {
+      flex: 1;
     }
   }
-  .nav-section {
-    // width: 100%;
-    flex-grow: 1;
-    margin-right: 10%;
+}
+
+.hamburger-icon {
+  display: none;
+  font-size: 1.5rem;
+  position: fixed;
+  top: 15px;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+@include media.max-width(medium) {
+  .left-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+    .main-content {
+      @include flexbox($direction: column, $justify: flex-start);
+      .home-section {
+        flex: 0 1 250px;
+      }
+    }
+  }
+  .left-panel.is-panel-visible {
+    transform: translateX(0);
+  }
+  .home-icon {
+    font-size: 3rem;
+  }
+  .hamburger-icon {
+    display: block;
+    font-size: 3em;
   }
 }
 

@@ -1,88 +1,17 @@
-// @import '../../styles/global-styles.scss';
-
-// .contact-form-container {
-//   //   max-width: 500px;
-//   @include flexbox($direction: column, $justify: center);
-//   width: 100%;
-//   height: 100%;
-//   margin: 0 auto;
-//   padding: 20px;
-//   background-color: $main-background;
-//   //   border-radius: 5px;
-//   //   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-//   h2 {
-//     text-align: center;
-//     margin-bottom: 20px;
-//     color: $blue-text;
-//   }
-
-//   .contact-form {
-//     display: flex;
-//     flex-direction: column;
-
-//     input,
-//     textarea {
-//       padding: 10px;
-//       margin-bottom: 10px;
-//       border: $test-border-2;
-//       border-radius: 5px;
-//       resize: none;
-//       font-size: 16px;
-//       &:focus {
-//         outline: none;
-//         border-color: $secondary-text;
-//       }
-//     }
-
-//     textarea {
-//       min-height: 150px;
-//     }
-
-//     button {
-//       // @include button;
-//       &:hover {
-//         background-color: $secondary-text;
-//         color: $primary-text;
-//       }
-//     }
-//   }
-// }
-
 @import '../../styles/global-styles.scss';
 
-// .contact-form-container {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   min-height: 100vh;
-//   //   min-width: 100vw;
-//   width: 100%;
-//   background-image: linear-gradient(
-//     135deg,
-//     $dark-background 0%,
-//     $secondary-background 100%
-//   );
-
-//   h2 {
-//     text-align: center;
-//     margin-bottom: 20px;
-//     color: $blue-text;
-//   }
 .form-wrapper {
   @include flexbox($direction: column, $justify: center);
-  h1 {
-    // margin: 0;
-    // @include main-h1;
-    // width: 100%;
-    // text-align: center;
-  }
-
+  padding-bottom: 2em;
   .contact-form {
     width: 100%;
     max-width: 400px;
-    // padding: 30px;
-    border-radius: 5px;
+    margin: 0 auto;
+    padding: 0 2em;
+
+    h1 {
+      padding: 0;
+    }
 
     .input-group {
       position: relative;
@@ -91,9 +20,10 @@
       input,
       textarea {
         width: 100%;
-        padding: 5px 10px;
+        padding: 10px 10px;
         border: none;
         border-bottom: 2px solid $dark-text;
+        border-radius: 5px;
         font-size: 16px;
         &:focus {
           outline: none;
@@ -120,7 +50,6 @@
 
     textarea {
       min-height: 150px;
-      // border-bottom: none;
       &:focus {
         border: 2px solid $secondary-text;
       }

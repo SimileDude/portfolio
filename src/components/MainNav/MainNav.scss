@@ -1,9 +1,10 @@
+@use '../../styles/media';
 @import '../../styles/global-styles.scss';
 
 .home-nav {
   flex-grow: 9;
-  width: 80%;
-  font-size: 5rem;
+  // width: 80%;
+  font-size: 7rem;
   text-transform: uppercase;
   line-height: 1;
 
@@ -16,9 +17,10 @@
     .home-nav-item {
       > a {
         color: white;
+
         &:hover {
           font-family: 'Raleway', sans-serif;
-          color: $secondary-text;
+          color: $faint-spacegray;
           margin-left: 3px;
         }
       }
@@ -37,13 +39,39 @@
 
     .nav-item {
       > a {
+        @include media.max-width(medium) {
+          font-size: 2em;
+          line-height: 2;
+        }
         color: white;
         &:hover {
-          color: $secondary-text;
-          opacity: 60%;
+          color: $light-blue;
         }
         &.active {
           color: $secondary-text;
+        }
+      }
+    }
+  }
+}
+
+@include media.max-width(medium) {
+  .home-nav {
+    font-size: 4rem;
+    line-height: 1.5;
+    margin: 0%;
+    padding: 0;
+
+    .home-nav-list {
+      @include media.max-width(medium) {
+        padding: 0;
+        margin: 2rem auto;
+      }
+
+      .home-nav-item {
+        > a {
+          &:hover {
+          }
         }
       }
     }

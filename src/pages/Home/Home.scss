@@ -1,15 +1,12 @@
+@use '../../styles/media';
 @import '../../styles/global-styles.scss';
-
-@mixin border($color: gray, $width: 1px, $style: solid) {
-  border: $color $width $style;
-}
 
 .home {
   @include flexbox();
   @include primary-bkgd();
   width: 100vw;
-  min-width: 900px !important;
-  min-height: 600px !important;
+  // min-width: 900px;
+  // min-height: 600px;
 
   .left-section {
     min-width: 35%;
@@ -35,18 +32,16 @@
       @include circle();
     }
     // .multi-colour-radial {
-    //   @include multi-radial-graidient();
+    //   @include multi-radial-gradient();
     //   z-index: 90;
     // }
     .portrait {
       z-index: 20;
-      // display: none;
     }
   }
 
   .main-section {
     @include flexbox($direction: column);
-    // min-height: 100vh;
     width: 100%;
     height: 100vh;
 
@@ -54,7 +49,6 @@
       display: flex;
       flex-grow: 5;
       width: 80%;
-      // border: $test-border-3;
       justify-content: space-between;
       .dot-design {
         display: flex;
@@ -63,11 +57,10 @@
         width: 100%;
         align-items: center;
         padding-right: 9%;
-        // border: $test-border-1;
         .dot {
           height: 2rem;
           width: 2rem;
-          background-color: $secondary-text;
+          background-color: $faint-spacegray;
           border-radius: 50%;
           display: inline-block;
         }
@@ -88,8 +81,60 @@
       height: 0;
       border-style: solid;
       border-width: 100vh 20vw 0 0 !important;
-      border-color: transparent white transparent transparent;
+      border-color: transparent $faint-spacegray transparent transparent;
       z-index: 0;
+    }
+  }
+}
+
+@include media.max-width(large) {
+  .dot-design {
+    display: none;
+  }
+  .main-section {
+    .lower-logo-section {
+      .dot-design {
+        .dot {
+          display: none;
+          background-color: aquamarine;
+        }
+      }
+      .logo {
+      }
+    }
+  }
+  .triangle-design {
+    display: none;
+  }
+}
+
+@include media.max-width(medium) {
+  .home {
+    @include flexbox($direction: column, $justify: center, $align: center);
+    min-width: 0;
+    min-height: 100vh;
+    margin: 0;
+    // margin: 0 auto;
+    .left-section {
+      padding-top: 10%;
+    }
+    .main-section {
+      width: auto;
+      height: auto;
+      .lower-logo-section {
+        width: 100%;
+
+        .dot-design {
+          display: none;
+        }
+        .logo {
+          margin: 0 auto;
+          // height: auto;
+        }
+      }
+    }
+    .triangle-design {
+      display: none;
     }
   }
 }

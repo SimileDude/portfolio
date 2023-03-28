@@ -77,19 +77,19 @@ import './Contact.scss';
 const Contact = () => {
   return (
     <div className="form-wrapper">
-      <h1>Contact </h1>
       <form className="contact-form">
+        <h1>Contact </h1>
         <div className="input-group">
           <input type="text" name="name" id="name" required />
-          <label>Name</label>
+          <label>Name*</label>
         </div>
         <div className="input-group">
           <input type="email" name="email" id="email" required />
-          <label>Email</label>
+          <label>Email*</label>
         </div>
         <div className="input-group">
           <textarea name="message" id="message" required></textarea>
-          <label>Message</label>
+          <label>Message*</label>
         </div>
         <button type="submit" className="submit-btn">
           Send Message
