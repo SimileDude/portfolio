@@ -5,9 +5,30 @@
   @include flexbox();
   @include primary-bkgd();
   width: 100vw;
-  // min-width: 900px;
-  // min-height: 600px;
+  min-height: 100vh;
+  // background-image: url('src/assets/technology_img.jpg');
+  background-image: linear-gradient(
+      to right,
+      rgba(52, 61, 70, 0.95),
+      rgba(52, 61, 70, 0.95)
+    ),
+    url('src/assets/technology_img.jpg');
+  background-size: cover;
+  // background-position: center;
+  background-position: left;
+  position: relative;
+  z-index: 0;
 
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: rgba(52, 61, 70, 0.9);
+    z-index: -1;
+  }
   .left-section {
     min-width: 35%;
     position: relative;
@@ -72,18 +93,30 @@
         z-index: 10;
       }
     }
-    .triangle-design {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 100vh 20vw 0 0 !important;
-      border-color: transparent $faint-spacegray transparent transparent;
-      z-index: 0;
-    }
+    // .triangle-design {
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   overflow: hidden;
+    //   width: 20vw;
+    //   height: 100vh;
+    //   z-index: 0;
+
+    //   img {
+    //     // width: 200%;
+    //     height: auto;
+    //     position: absolute;
+    //     // top: -50%;
+    //     // left: -50%;
+    //     // transform: rotate(45deg) skewY(-30deg);
+    //     object-fit: contain;
+    //     height: auto;
+    //     width: auto;
+    //     // max-width: 120000px;
+    //     max-height: 1000px;
+    //     right: -50%;
+    //   }
+    // }
   }
 }
 
@@ -96,7 +129,6 @@
       .dot-design {
         .dot {
           display: none;
-          background-color: aquamarine;
         }
       }
       .logo {

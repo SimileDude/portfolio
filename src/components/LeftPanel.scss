@@ -41,6 +41,7 @@
   right: 2rem;
   cursor: pointer;
   z-index: 1000;
+  filter: drop-shadow(3px 3px 1px $very-light-spacegray);
 }
 
 @include media.max-width(medium) {
@@ -68,6 +69,7 @@
   .hamburger-icon {
     display: block;
     font-size: 3em;
+    filter: drop-shadow(2px 2px 4px $very-light-spacegray);
   }
 }
 
