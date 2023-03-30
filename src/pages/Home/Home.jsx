@@ -25,7 +25,12 @@ function Home() {
           </div>
           <div className="logo">AshKherad</div>
         </section>
-        <span className="triangle-design"></span>
+        {/* <div className="triangle-design">
+          <img
+            src="src/assets/technology_img.jpg"
+            alt="technology_background"
+          />
+        </div> */}
       </main>
     </div>
   );

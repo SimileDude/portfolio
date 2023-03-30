@@ -24,8 +24,8 @@ $faint-spacegray: #dee4f1;
 $very-light-spacegray: #c0c5ce;
 $light-spacegray: #a7adba;
 $medium-spacegray: #bbc2cc;
-$dark-spacegray: #80858f;
-$very-dark-spacegray: #343d46;
+$dark-spacegray: rgb(128, 133, 143);
+$very-dark-spacegray: rgb(52, 61, 70);
 $silver: #bbc2cc;
 
 $gradient-blue: linear-gradient(
@@ -37,14 +37,12 @@ $gradient-blue: linear-gradient(
 
 $primary-text: #fff;
 $secondary-text: #ea9010;
-$dark-text: #0c4c9a;
+$dark-text: rgb(12, 76, 154);
 $dark-brown: #37371f;
 $pistachio: #90be6d;
 $slightly-blue: #e5f4ff;
 $light-blue: rgba(175, 206, 252, 0.8);
 $opaque-blue: rgba(35, 90, 162, 0.1);
-
-// $desktop-width: 900px;
 
 @mixin blue-gradient() {
   background: $gradient-blue;
@@ -95,7 +93,7 @@ $opaque-blue: rgba(35, 90, 162, 0.1);
 @mixin logo() {
   font-size: 6rem;
   font-family: 'Qwitcher Grypen', cursive;
-  color: $secondary-text;
+  color: $faint-spacegray;
   font-weight: 400;
   z-index: 200;
   @include logo-delay;
@@ -151,6 +149,10 @@ h1 {
   font-weight: bold;
   padding: 0 0.3em;
   // text-shadow: 3px 0px 6px $light-spacegray;
+}
+
+li {
+  list-style: none;
 }
 
 // button {

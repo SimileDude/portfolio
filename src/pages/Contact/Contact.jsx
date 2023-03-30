@@ -79,6 +79,10 @@ const Contact = () => {
     <div className="form-wrapper">
       <form className="contact-form">
         <h1>Contact </h1>
+        <h3>
+          Leave me your contact info and I'll get back to you as soon as
+          possible.
+        </h3>
         <div className="input-group">
           <input type="text" name="name" id="name" required />
           <label>Name*</label>

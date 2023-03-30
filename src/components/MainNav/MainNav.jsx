@@ -4,7 +4,7 @@ import './MainNav.scss';
 
 const PAGE_LINKS = ['About', 'Work', 'Skills', 'Contact'];
 
-const MainNav = () => {
+const MainNav = (closePanel) => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
 
@@ -24,6 +24,7 @@ const MainNav = () => {
                   className={({ isActive, isPending }) =>
                     isPending ? 'pending' : isActive ? 'active' : ''
                   }
+                  onClick={closePanel}
                 >
                   {link}
                 </NavLink>
@@ -37,4 +38,3 @@ const MainNav = () => {
 };
 
 export default MainNav;
-

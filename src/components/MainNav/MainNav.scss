@@ -4,23 +4,25 @@
 .home-nav {
   flex-grow: 9;
   // width: 80%;
-  font-size: 7rem;
+  font-size: 6rem;
   text-transform: uppercase;
-  line-height: 1;
+  line-height: 1.1;
 
   .home-nav-list {
     list-style-type: none;
     padding-right: 10%;
     padding-top: 10%;
-    font-family: 'Raleway Dots', cursive;
+    // font-family: 'Raleway Dots', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
 
     .home-nav-item {
       > a {
         color: white;
 
         &:hover {
-          font-family: 'Raleway', sans-serif;
-          color: $faint-spacegray;
+          font-weight: 700;
+          color: $light-blue;
           margin-left: 3px;
         }
       }
