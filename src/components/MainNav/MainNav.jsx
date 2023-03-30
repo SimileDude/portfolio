@@ -1,11 +1,12 @@
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import './MainNav.scss';
 
 const PAGE_LINKS = ['About', 'Work', 'Skills', 'Contact'];
 
-const MainNav = (closePanel) => {
+const MainNav = ({ closePanel }) => {
   const location = useLocation();
+  const navigate = useNavigate();
   const isHomePage = location.pathname === '/';
 
   const navClass = isHomePage ? 'home-nav' : 'nav';
@@ -29,6 +30,27 @@ const MainNav = (closePanel) => {
                   {link}
                 </NavLink>
               </li>
+              // return (
+              //   <li key={index} className={navItemClass}>
+              //     <a
+              //       href={isHomePage ? `#${link}` : `/${link}`}
+              //       id={link}
+              //       onClick={(e) => {
+              //         if (isHomePage) {
+              //           e.preventDefault();
+              //           // closePanel();
+              //           document
+              //             .getElementById(link)
+              //             .scrollIntoView({ behavior: 'smooth' });
+              //         } else {
+              //           navigate(`/${link}`);
+              //           closePanel();
+              //         }
+              //       }}
+              //     >
+              //       {link}
+              //     </a>
+              //   </li>
             );
           })}
         </ul>
@@ -38,3 +60,4 @@ const MainNav = (closePanel) => {
 };
 
 export default MainNav;
+

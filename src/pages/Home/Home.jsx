@@ -4,7 +4,6 @@ import MainNav from '../../components/MainNav/MainNav';
 function Home() {
   return (
     <div className="home">
-      {/* <SymbolRain /> */}
       <section className="left-section">
         {/* <span className="circle"></span> */}
         <img
@@ -12,8 +11,6 @@ function Home() {
           alt=""
           className="circle portrait"
         />
-        {/* <span className="circle color-wheel"></span> */}
-        {/* <span className="diamond-gradient"></span> */}
       </section>
       <main className="main-section">
         <MainNav />

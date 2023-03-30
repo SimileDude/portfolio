@@ -1,6 +1,8 @@
 import React from 'react';
 import LeftPanel from '../components/LeftPanel';
 import './Layout.scss';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { useLocation } from 'react-router-dom';
 
 const Layout = ({ children }) => {
   return (
