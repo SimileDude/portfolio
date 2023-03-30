@@ -39,6 +39,7 @@
       font-size: 1.5rem;
       padding: auto 0.5rem;
       transition: color 0.3s ease-in-out;
+      @include slide-in;
     }
 
     .right-arrow {

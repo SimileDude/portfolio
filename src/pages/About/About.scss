@@ -1,2 +1,6 @@
 @import '../../styles/global-styles.scss';
 
+p {
+  @include slide-in;
+}
+

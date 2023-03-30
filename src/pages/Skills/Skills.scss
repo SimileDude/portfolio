@@ -1,113 +1,9 @@
 @use '../../styles/media';
 @import '../../styles/global-styles.scss';
 
-* {
-  box-sizing: border-box;
-}
-
-.skills-table {
-  border-collapse: collapse;
-  width: 100%;
-  max-width: 800px;
-  min-width: 550px;
-  margin-left: 2em;
-  padding: 1em 0.5em;
-
-  thead th {
-    background-color: #ffffff;
-    text-align: left;
-    padding: 1em 0.5em;
-    font-size: medium;
-    text-decoration: underline;
-    text-decoration-color: $very-dark-spacegray;
-  }
-  tbody td {
-    border-bottom: 1px solid #ffffff;
-    font-size: large;
-    padding: 1em 0.5em;
-    text-align: left;
-  }
-  // tbody tr:nth-child(even) {
-  // background-color: #deeefe;
-  // }
-}
-
-// @media (max-width: 760px) {
-// .skills-table thead {
-//   display: none;
-// }
-
-// .skills-table,
-// .skills-table tbody,
-// .skills-table tr,
-// .skills-table td {
-//   display: block;
-//   width: 100%;
-//   min-width: 0;
-// }
-
-// .skills-table tr {
-//   margin-bottom: 15px;
-// }
-
-// .skills-table td {
-//   // padding: 20px 20px 20px 50%; /* Increased padding for better spacing */
-//   // font-size: 4em;
-//   position: relative;
-//   text-align: right;
-//   line-height: 1.6; /* Added line-height for better spacing */
-//   border-bottom: none;
-// }
-
-// .skills-table tbody tr:last-child td {
-//   border-bottom: 1px solid #f1f1f1;
-// }
-
-// .skills-table td::before {
-//   content: attr(data-label);
-//   position: absolute;
-//   left: 0;
-//   top: 50%;
-//   transform: translateY(-50%);
-//   font-weight: bold;
-//   padding-left: 15px;
-// }
-// }
-
-// @include media.max-width(medium) {
-//   .skills-table {
-//     min-width: 0;
-//     margin-left: 0;
-//     display: block;
-
-//     thead,
-//     tbody tr {
-//       display: flex;
-//       flex-direction: column;
-//     }
-
-//     thead th {
-//       font-size: smaller;
-//       width: 100%;
-//     }
-
-//     tbody td {
-//       font-size: medium;
-//       width: 100%;
-//       display: flex;
-//       justify-content: space-between;
-//       align-items: center;
-//     }
-
-//     tbody tr {
-//       margin-bottom: 1em;
-//     }
-//   }
-// }
-
-@import '../../styles/global-styles.scss';
-
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -126,7 +22,6 @@
       text-decoration-color: $very-dark-spacegray;
       color: $very-dark-spacegray;
       margin: 0 0 1em 0;
-      // margin-bottom: 1em;
     }
 
     ul {
@@ -138,6 +33,7 @@
         font-size: large;
         padding: 0.5em 0;
         text-align: left;
+        @include slide-in;
       }
     }
   }

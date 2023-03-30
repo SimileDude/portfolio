@@ -16,7 +16,7 @@ const Work = () => {
                   <img
                     src={project.logoLink}
                     alt={project.title}
-                    className="project-logo"
+                    className="project-logo fade-in"
                   />
                 )}
               </div>

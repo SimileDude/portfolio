@@ -20,6 +20,7 @@
 
       input,
       textarea {
+        @include slide-in;
         width: 100%;
         padding: 10px 10px;
         border: none;
@@ -58,6 +59,7 @@
 
     .submit-btn {
       @include secondary-button;
+      @include slide-in;
       font-weight: 700;
       width: 100%;
       border: none;
