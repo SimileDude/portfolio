@@ -3,7 +3,7 @@ const projects = [
     index: 0,
     title: 'CryptoHub (personal project)',
     description:
-      'A personal fun project. It is a cryptocurrency webapp that allows users to search for a specific cryptocurrency and view its chart and details. All of the code is available on my github.',
+      'A personal fun project. It is a cryptocurrency webapp that allows users to search for a specific cryptocurrency and view its chart and details. All of the code is available on my github through the link above.',
     logoLink: '/assets/Btc.png',
     link: 'https://github.com/SimileDude/CryptoHub',
     tools: ['React.js', 'Javascript', 'Chart.js', 'CoinGecko API'],
@@ -12,8 +12,8 @@ const projects = [
     index: 1,
     title: 'AshKherad.com',
     description:
-      "I have the code for this portfolio site available on my github for review. It's built, from scratch, with React.js and other tools.",
-    link: 'https://google.com',
+      "I have the code for this portfolio site available on my github for review via the link above. It's built, from scratch, with React.js and other tools.",
+    link: 'https://github.com/SimileDude/portfolio',
     logoLink: '/assets/ashkherad.png',
     tools: ['React.js', 'Javascript', 'SASS', 'Figma', 'Notion'],
   },
