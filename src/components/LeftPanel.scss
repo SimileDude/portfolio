@@ -2,7 +2,7 @@
 @import '../styles/global-styles.scss';
 
 .left-panel {
-  @include gray-background;
+  @include blue-gradient;
   @include box-shadow;
   flex: 0 0 200px;
   width: 200px;

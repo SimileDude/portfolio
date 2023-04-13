@@ -4,3 +4,7 @@ p {
   @include slide-in;
 }
 
+.contact-btn {
+  @include secondary-button();
+}
+

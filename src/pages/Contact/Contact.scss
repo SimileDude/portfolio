@@ -26,7 +26,8 @@
         border: none;
         border-bottom: 2px solid $dark-text;
         border-radius: 5px;
-        font-size: 16px;
+        font-size: 1rem;
+        font-family: inherit;
         &:focus {
           outline: none;
           border-bottom-color: $secondary-text;
@@ -62,8 +63,6 @@
       @include slide-in;
       font-weight: 700;
       width: 100%;
-      border: none;
-      font-size: 16px;
       cursor: pointer;
     }
   }
