@@ -1,10 +1,11 @@
-# WELCOME TO MY PORTFOLIO
+# WELCOME
 
-This is the repo for my personal portfolio site of most recent work. 
+This is the code repo for [ashkherad.com](https://ashkherad.com), my personal portfolio site.
 
 I have left this code here for review by hiring managers, recruiters, etc.
 
-## About Me
-Aside from some freelance work, I’m currently seeking a full-time role.  
+You can visit the site to see my most recent work. 
 
-Contact me if you’d like to chat: ashkherad(at)gmail.com.
+## Let's chat
+
+Email me if you'd like to chat or review my resume: ashkherad(at)gmail.com.
