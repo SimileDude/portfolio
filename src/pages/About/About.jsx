@@ -4,15 +4,29 @@ import './About.scss';
 const About = () => {
   return (
     <>
-      <h1>I develop for the web</h1>
+      <h1>About me</h1>
+      <p>Hi! My name is Ash, and thanks for taking the time to be here.</p>
       <p>
-        My name is Ash, but friends call me Ashman. I’m a full stack developer
-        and my language of choice is Javascript, with Reactjs on the front-end
-        and Nodejs on the backend. And while solving challenging engineering
-        problems is what I do day-in and day-out, UI/UX is very close to my
-        heart and I try to make the web a little better to use and look at, one
-        element at a time.
+        I'm passionate about building web applications and features using
+        robust, tried-and-tested technologies. Behind the scenes, I diligently
+        strive to craft clean code that is easily extendible in the future.
       </p>
+      <p>
+        My ultimate goal is to contribute to a high-performing team, delivering
+        exceptional products that make a meaningful difference in the world.
+      </p>
+      <p>
+        I bring valuable experience in leading small, agile teams that
+        prioritize value and efficiency. My strong belief in lean methodologies
+        has been reinforced through my time spent in the manufacturing industry,
+        where I gained firsthand knowledge of the lean principles pioneered by
+        Toyota.
+      </p>
+      <p>
+        I'm open to engage with recruiters, hiring managers, and fellow software
+        engineers to discuss potential projects and opportunities.
+      </p>
+      <p>Feel free to reach out, and let's start a conversation!</p>
     </>
   );
 };

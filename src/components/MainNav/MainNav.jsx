@@ -30,27 +30,6 @@ const MainNav = ({ closePanel }) => {
                   {link}
                 </NavLink>
               </li>
-              // return (
-              //   <li key={index} className={navItemClass}>
-              //     <a
-              //       href={isHomePage ? `#${link}` : `/${link}`}
-              //       id={link}
-              //       onClick={(e) => {
-              //         if (isHomePage) {
-              //           e.preventDefault();
-              //           // closePanel();
-              //           document
-              //             .getElementById(link)
-              //             .scrollIntoView({ behavior: 'smooth' });
-              //         } else {
-              //           navigate(`/${link}`);
-              //           closePanel();
-              //         }
-              //       }}
-              //     >
-              //       {link}
-              //     </a>
-              //   </li>
             );
           })}
         </ul>

@@ -53,7 +53,7 @@
     textarea {
       min-height: 150px;
       &:focus {
-        border: 2px solid $secondary-text;
+        border-bottom: 2px solid $secondary-text;
       }
     }
 
