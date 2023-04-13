@@ -8,4 +8,4 @@ You can visit the site to see my most recent work.
 
 ## Let's chat
 
-Email me if you'd like to chat or review my resume: ashkherad(at)gmail.com.
+Email me if you'd like to chat or receive a copy of my resume: ashkherad(at)gmail.com.
