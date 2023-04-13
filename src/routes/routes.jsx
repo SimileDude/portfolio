@@ -2,8 +2,9 @@ import About from '../pages/About/About';
 import Work from '../pages/Work/Work';
 import Skills from '../pages/Skills/Skills';
 import Contact from '../pages/Contact/Contact';
+import ThankYou from '../pages/Contact/ThankYou';
 
-const routes = [
+const navRoutes = [
   {
     path: '/about',
     component: About,
@@ -20,7 +21,11 @@ const routes = [
     path: '/contact',
     component: Contact,
   },
+  {
+    path: '/thankyou',
+    component: ThankYou,
+  },
 ];
 
-export default routes;
+export default navRoutes;
 

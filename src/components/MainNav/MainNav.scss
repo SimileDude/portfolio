@@ -9,10 +9,10 @@
   line-height: 1.1;
 
   .home-nav-list {
+    @include fade-in;
     list-style-type: none;
     padding-right: 10%;
     padding-top: 10%;
-    // font-family: 'Raleway Dots', cursive;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
 
@@ -68,13 +68,6 @@
       @include media.max-width(medium) {
         padding: 0;
         margin: 2rem auto;
-      }
-
-      .home-nav-item {
-        > a {
-          &:hover {
-          }
-        }
       }
     }
   }
