@@ -1,6 +1,22 @@
 const projects = [
   {
     index: 0,
+    title: 'Allures Store (Capstone Project)',
+    description:
+      'A speedy (mock) e-commerce store using the Fakestore API. All of the code is available on my github through the link above.',
+    logoLink: '/assets/Allures.png',
+    link: 'https://github.com/SimileDude/allures-store',
+    tools: [
+      'React.js',
+      'Javascript',
+      'Tailwind',
+      'Axios',
+      'React Router DOM',
+      'FakeStore API',
+    ],
+  },
+  {
+    index: 1,
     title: 'CryptoHub (personal project)',
     description:
       'A personal fun project. It is a cryptocurrency webapp that allows users to search for a specific cryptocurrency and view its chart and details. All of the code is available on my github through the link above.',
@@ -9,7 +25,7 @@ const projects = [
     tools: ['React.js', 'Javascript', 'Chart.js', 'CoinGecko API'],
   },
   {
-    index: 1,
+    index: 2,
     title: 'AshKherad.com',
     description:
       "I have the code for this portfolio site available on my github for review via the link above. It's built, from scratch, with React.js and other tools.",
@@ -18,7 +34,7 @@ const projects = [
     tools: ['React.js', 'Javascript', 'SASS', 'Figma', 'Notion'],
   },
   {
-    index: 2,
+    index: 3,
     title: 'Akindi',
     description:
       'Akindi.com is an EdTech SAAS start-up automating assessments for schools and teachers. Currently working here part-time, primarily front-end work and back-end of the platform.',
@@ -35,7 +51,7 @@ const projects = [
     ],
   },
   {
-    index: 3,
+    index: 4,
     title: 'Gram Cardiology',
     description: `I designed and developed a web application to allow for reporting of various cardiac diagnostic tests 
     (i.e. ECHOs, ECGs, stress tests) with integration into the electronic medical record. After implementation, physician 
@@ -52,7 +68,7 @@ const projects = [
       'Jest',
     ],
   },
-];
+]
 
-export default projects;
+export default projects
 
