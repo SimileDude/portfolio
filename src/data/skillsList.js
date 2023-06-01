@@ -3,14 +3,16 @@ const skillsList = {
   frontend: [
     'React',
     'Redux',
+    'React Router DOM',
     'Material UI',
+    'Tailwind CSS',
     'Sass',
     'VueJS',
     'Jest',
     'Styled Components',
     'Bootstrap',
   ],
-  backend: ['SQL', 'NoSQL', 'Express', 'NodeJS'],
+  backend: ['SQL', 'NoSQL', 'Express', 'NodeJS', 'NextJS'],
   other: [
     'Google Cloud Platform',
     'Git',
@@ -21,6 +23,7 @@ const skillsList = {
     'Advanced Excel',
     'UML',
   ],
-};
+}
 
-export default skillsList;
+export default skillsList
+
