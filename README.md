@@ -1,10 +1,9 @@
 # WELCOME
 
-This is the code repo for [ashkherad.com](https://ashkherad.com), my personal portfolio site.
+Welcome to my github account!  
 
-I have left this code here for review by hiring managers, recruiters, etc.
+You can also visit my personal website for more description on the sample projects I have left here: [ashkherad.com](https://ashkherad.com).
 
-You can visit the site to see my most recent work. 
 
 ## Let's chat
 
